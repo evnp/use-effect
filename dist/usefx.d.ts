@@ -5,8 +5,8 @@ interface Settings {
     warn: boolean;
     error: boolean;
 }
-declare function configureUseEffect(settings: Settings): void;
+declare function configureUseFx(settings: Settings): void;
 declare function usePostChangeEffect(setup: EffectCallback, dependencies: UseEffectDependencies): UseEffectReturn;
 declare function usePostRenderEffect(setup: EffectCallback): UseEffectReturn;
 declare function usePostInitialRenderEffect(setup: EffectCallback): UseEffectReturn;
-export { configureUseEffect, usePostChangeEffect, usePostRenderEffect, usePostInitialRenderEffect, };
+export { configureUseFx, usePostChangeEffect, usePostRenderEffect, usePostInitialRenderEffect, };

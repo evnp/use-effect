@@ -13,7 +13,7 @@ const _settings = {
   error: true,
 };
 
-function configureUseEffect(settings: Settings): void {
+function configureUseFx(settings: Settings): void {
   if (typeof settings.warn === "boolean") {
     _settings.warn = settings.warn;
   }
@@ -77,7 +77,7 @@ function usePostInitialRenderEffect(setup: EffectCallback): UseEffectReturn {
 }
 
 export {
-  configureUseEffect,
+  configureUseFx,
   usePostChangeEffect,
   usePostRenderEffect,
   usePostInitialRenderEffect,
