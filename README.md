@@ -22,15 +22,14 @@ To configure eslint to correctly lint these variants the same way it will lint `
   'error',
   {
     selector: "CallExpression[callee.name='useEffect']",
-    message:
-      [
-        "Calling useEffect is forbidden due to lack of clarity and" +
-          " performance issues that stem from incorrect usage of it." +
-          " Please use one of these alternate hooks instead:",
-        "usePostChangeEffect ( import { usePostChangeEffect } from 'usefx' )",
-        "usePostRenderEffect ( import { usePostRenderEffect } from 'usefx' )",
-        "usePostInitialRenderEffect ( import { usePostInitialRenderEffect } from 'usefx' )",
-      ].join("\n")
+    message: [
+      "Calling useEffect is forbidden due to lack of clarity and" +
+        " performance issues that stem from incorrect usage of it." +
+        " Please use one of these alternate hooks instead:",
+      "usePostChangeEffect ( import { usePostChangeEffect } from 'usefx' )",
+      "usePostRenderEffect ( import { usePostRenderEffect } from 'usefx' )",
+      "usePostInitialRenderEffect ( import { usePostInitialRenderEffect } from 'usefx' )",
+    ].join("\n")
   },
 ],
 ```
